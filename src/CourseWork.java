@@ -7,8 +7,8 @@ public class CourseWork {
         employees[3] = new Employee(30000, "Сергей Иванов", 4);
         employees[4] = new Employee(40000, "Александр Ковалев", 5);
         System.out.println("Сумма всех зарплат:" + calculateSumSalary());
-        System.out.println("Сотрудник с максимальной зарплатой:" + getEmployeeWithMaxSalary());
-        System.out.println("Сотрудник с минимальной зарплатой:" + getEmployeeWithMinSalary());
+        System.out.println("Сотрудник с максимальной зарплатой: " + getEmployeeWithMaxSalary());
+        System.out.println("Сотрудник с минимальной зарплатой: " + getEmployeeWithMinSalary());
         System.out.println("Средняя зарплата сотрудников: " + EmployeeAverageSalary());
     }
     public static int calculateSumSalary() {
