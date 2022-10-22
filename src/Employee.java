@@ -28,6 +28,7 @@ public class Employee {
         return this.id;
     }
 
+
     public String toString() {
         return "Employee{ salary  " + this.salary + ", fullName  " + this.fullName + ", id = " + this.id + " department " + this.department + "}";
     }
