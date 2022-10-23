@@ -11,7 +11,6 @@ public class Employee {
         this.id = counter++;
         this.department = department;
     }
-
     public int getSalary() {
         return this.salary;
     }
@@ -27,9 +26,12 @@ public class Employee {
     public int getId() {
         return this.id;
     }
-
+    public int getDepartment() {
+        return this.department;
+    }
 
     public String toString() {
-        return "Employee{ salary  " + this.salary + ", fullName  " + this.fullName + ", id = " + this.id + " department " + this.department + "}";
+        return "Employee{ salary  " + this.salary + ", fullName  " + this.fullName + ", id = " + this.id + " department " + this.department + "}";}
+
     }
-}
+

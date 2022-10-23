@@ -8,11 +8,14 @@ public class CourseWork {
         employees[3] = new Employee(30000, "Сергей Иванов", 4);
         employees[4] = new Employee(40000, "Александр Ковалев", 5);
 
+
         System.out.println("Сумма всех зарплат:" + calculateSumSalary());
         System.out.println("Сотрудник с максимальной зарплатой:" + getEmployeeWithMaxSalary());
         System.out.println("Сотрудник с минимальной зарплатой:" + getEmployeeWithMinSalary());
         System.out.println("Средняя зарплата сотрудников: " + employeeAverageSalary());
+      //  System.out.println( printAllEmployeesName());
     }
+
 
     public static int calculateSumSalary() {
         int sum = 0;
@@ -57,8 +60,16 @@ public class CourseWork {
                 amount++;
             }
         }
-        return sum/amount;
+        return sum / amount;
 
     }
 
-}
+   // public static int printAllEmployeesName() {
+      //  int fio = 0;
+    //    for (Employee employee : employees) {
+          //  System.out.println("id " + employee.getId() + ", ФИО: " + employee.getFullName()
+           //        + "  Зарплата: " + employee.getSalary());
+       // }
+     //   return fio;
+  //  }
+//}
