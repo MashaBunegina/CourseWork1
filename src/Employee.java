@@ -1,8 +1,8 @@
 public class Employee {
     private int salary;
-    private final String fullName;
+    private String fullName;
     private int department;
-    private final int id;
+    private int id;
     private static int counter = 0;
 
     public Employee(int salary, String fullName, int department) {
@@ -10,6 +10,15 @@ public class Employee {
         this.fullName = fullName;
         this.id = counter++;
         this.department = department;
+    }
+        private String name;
+         private String surname;
+         private String patronymic;
+    public Employee(String fullName, String name, String surname, String patronymic) {
+        this.name = name;
+        this.surname = surname;
+        this.patronymic = patronymic;
+
     }
     public int getSalary() {
         return this.salary;

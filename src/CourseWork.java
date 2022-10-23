@@ -13,7 +13,12 @@ public class CourseWork {
         System.out.println("Сотрудник с максимальной зарплатой:" + getEmployeeWithMaxSalary());
         System.out.println("Сотрудник с минимальной зарплатой:" + getEmployeeWithMinSalary());
         System.out.println("Средняя зарплата сотрудников: " + employeeAverageSalary());
-      //  System.out.println( printAllEmployeesName());
+        System.out.println (employees [0] );
+        System.out.println (employees [1]  );
+        System.out.println (employees [2]  );
+        System.out.println (employees [3]  );
+        System.out.println (employees [4]  );
+
     }
 
 
@@ -63,13 +68,4 @@ public class CourseWork {
         return sum / amount;
 
     }
-
-   // public static int printAllEmployeesName() {
-      //  int fio = 0;
-    //    for (Employee employee : employees) {
-          //  System.out.println("id " + employee.getId() + ", ФИО: " + employee.getFullName()
-           //        + "  Зарплата: " + employee.getSalary());
-       // }
-     //   return fio;
-  //  }
-//}
+}
