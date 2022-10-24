@@ -7,20 +7,22 @@ public class CourseWork {
         employees[2] = new Employee(20000, "Иван Петров", 3);
         employees[3] = new Employee(30000, "Сергей Иванов", 4);
         employees[4] = new Employee(40000, "Александр Ковалев", 5);
+        for (Employee i : employees)
+            System.out.println(i);
+        for (Employee employee : employees) {
+            if (employee != null) {
+                System.out.println(employee.getFullName());
+            }
+        }
 
 
         System.out.println("Сумма всех зарплат:" + calculateSumSalary());
         System.out.println("Сотрудник с максимальной зарплатой:" + getEmployeeWithMaxSalary());
         System.out.println("Сотрудник с минимальной зарплатой:" + getEmployeeWithMinSalary());
         System.out.println("Средняя зарплата сотрудников: " + employeeAverageSalary());
-        System.out.println (employees [0] );
-        System.out.println (employees [1]  );
-        System.out.println (employees [2]  );
-        System.out.println (employees [3]  );
-        System.out.println (employees [4]  );
+
 
     }
-
 
     public static int calculateSumSalary() {
         int sum = 0;
