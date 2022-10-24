@@ -12,10 +12,12 @@ public class CourseWork {
         System.out.println("Сотрудник с максимальной зарплатой:" + getEmployeeWithMaxSalary());
         System.out.println("Сотрудник с минимальной зарплатой:" + getEmployeeWithMinSalary());
         System.out.println("Средняя зарплата сотрудников: " + employeeAverageSalary());
-        System.out.println("ФИО:" + printFIO());
-        System.out.println(printAllEmployees());
+          printFIO();
+          printAllEmployees();
+
 
     }
+
     public static int calculateSumSalary() {
         int sum = 0;
         for (Employee employee : employees) {
@@ -61,20 +63,20 @@ public class CourseWork {
         }
         return sum / amount;
     }
-    public static char printFIO(){
+
+    public static void printFIO() {
         for (Employee employee : employees) {
             if (employee != null) {
                 System.out.println(employee.getFullName());
             }
         }
-        return 0;
     }
-    public static int printAllEmployees(){
+
+    public static void printAllEmployees() {
         for (Employee employee : employees) {
             if (employee != null) {
                 System.out.println(employee);
             }
         }
-        return 0;
     }
-    }
+}
